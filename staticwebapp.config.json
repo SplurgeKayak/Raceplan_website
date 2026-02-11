@@ -17,18 +17,63 @@
     {
       "route": "/security",
       "rewrite": "/security.html"
+    },
+    {
+      "route": "/.auth/login/github",
+      "allowedRoles": ["anonymous"]
+    },
+    {
+      "route": "/.auth/login/*",
+      "statusCode": 404
+    },
+    {
+      "route": "/.auth/register/*",
+      "statusCode": 404
+    },
+    {
+      "route": "/.auth/logout",
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/.auth/purge/*",
+      "statusCode": 404
+    },
+    {
+      "route": "/api/*",
+      "allowedRoles": ["admin"]
+    },
+    {
+      "route": "/.env",
+      "statusCode": 404
+    },
+    {
+      "route": "/.git*",
+      "statusCode": 404
+    },
+    {
+      "route": "/*.config",
+      "statusCode": 404
     }
   ],
   "responseOverrides": {
+    "401": {
+      "statusCode": 404
+    },
+    "403": {
+      "statusCode": 404
+    },
     "404": {
       "rewrite": "/index.html",
       "statusCode": 404
     }
   },
   "globalHeaders": {
+    "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
     "X-Content-Type-Options": "nosniff",
     "X-Frame-Options": "DENY",
     "Referrer-Policy": "strict-origin-when-cross-origin",
-    "Permissions-Policy": "camera=(), microphone=(), geolocation=()"
+    "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+    "X-DNS-Prefetch-Control": "off",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
   }
 }
