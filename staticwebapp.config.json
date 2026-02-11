@@ -1,0 +1,34 @@
+{
+  "navigationFallback": null,
+  "routes": [
+    {
+      "route": "/privacy-policy",
+      "rewrite": "/privacy-policy.html"
+    },
+    {
+      "route": "/privacy",
+      "redirect": "/privacy-policy",
+      "statusCode": 301
+    },
+    {
+      "route": "/support",
+      "rewrite": "/support.html"
+    },
+    {
+      "route": "/security",
+      "rewrite": "/security.html"
+    }
+  ],
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/index.html",
+      "statusCode": 404
+    }
+  },
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "camera=(), microphone=(), geolocation=()"
+  }
+}
