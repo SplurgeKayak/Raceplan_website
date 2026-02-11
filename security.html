@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Security &mdash; Raceplace</title>
-  <meta name="description" content="How Raceplace protects your data. An honest overview of our security practices.">
+  <title>Security &mdash; Racepace</title>
+  <meta name="description" content="How Racepace protects your data.">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
   <!-- ======== Header ======== -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo" aria-label="Raceplace home">Race<span>place</span></a>
+      <a href="index.html" class="logo" aria-label="Racepace home">Race<span>pace</span></a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation menu">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="3" y1="6" x2="21" y2="6"/>
@@ -38,7 +38,7 @@
   <section class="page-header">
     <div class="container">
       <h1>Security</h1>
-      <p>An honest look at how we protect your data.</p>
+      <p>How Racepace protects your data.</p>
     </div>
   </section>
 
@@ -46,8 +46,7 @@
   <main class="content-body">
 
     <p>
-      Raceplace is a small, focused service built on trusted cloud infrastructure. We take the security of your data
-      seriously and aim to be transparent about the measures we have in place. Below is an overview of our approach.
+      Below is a summary of how Racepace protects your data across the iOS app and our backend services.
     </p>
 
     <!-- Security cards -->
@@ -57,94 +56,39 @@
         <h3>Encryption in Transit</h3>
         <p>
           All data transmitted between your device, Garmin Connect, and our servers is protected using
-          <strong>HTTPS/TLS</strong>. This means your activity data and personal information are encrypted
-          while they travel over the internet.
+          <strong>HTTPS/TLS</strong>.
         </p>
       </div>
 
       <div class="security-card">
         <h3>Encryption at Rest</h3>
         <p>
-          Data stored on our servers is encrypted using the built-in encryption capabilities of
-          <strong>Microsoft Azure</strong>. This protects your data even when it is not actively being accessed.
+          Data stored on our backend is encrypted using the built-in encryption capabilities of
+          <strong>Microsoft Azure</strong>.
         </p>
       </div>
 
       <div class="security-card">
-        <h3>Secure Cloud Infrastructure</h3>
+        <h3>Azure API Management</h3>
         <p>
-          Raceplace runs on <strong>Microsoft Azure</strong>, a globally recognised cloud platform that
-          maintains a wide range of industry security certifications and compliance standards.
+          Backend APIs are protected through <strong>Azure API Management</strong>, providing authentication,
+          rate limiting, and controlled access.
         </p>
       </div>
 
       <div class="security-card">
-        <h3>Access Controls</h3>
+        <h3>iOS Platform Security</h3>
         <p>
-          Access to production systems and personal data is restricted to authorised personnel only, following the
-          <strong>principle of least privilege</strong>. We don&rsquo;t give anyone more access than they need to do their job.
-        </p>
-      </div>
-
-      <div class="security-card">
-        <h3>Dependency Management</h3>
-        <p>
-          We regularly review and update our software dependencies to address known security vulnerabilities and
-          keep the service running on supported, patched versions.
-        </p>
-      </div>
-
-      <div class="security-card">
-        <h3>Monitoring &amp; Logging</h3>
-        <p>
-          We use logging and monitoring tools to detect unusual activity. This helps us identify and respond to
-          potential issues quickly.
+          Data stored on your iPhone benefits from <strong>Apple&rsquo;s iOS platform security</strong>,
+          including hardware-backed encryption and app sandboxing.
         </p>
       </div>
 
     </div>
 
-    <!-- Incident response -->
-    <h2>Reporting a Security Concern</h2>
-    <p>
-      If you believe you have found a security vulnerability in Raceplace, or if you suspect your account or data
-      may have been compromised, please let us know immediately.
+    <p style="margin-top:2rem;">
+      For security related concerns email <a href="mailto:raceplandrew@gmail.com">raceplandrew@gmail.com</a>
     </p>
-    <p>
-      Contact us at <a href="mailto:[SUPPORT_EMAIL]"><strong>[SUPPORT_EMAIL]</strong></a> with the subject line
-      <strong>&ldquo;Security concern&rdquo;</strong>. Please include as much detail as you can so we can investigate
-      promptly.
-    </p>
-    <p>
-      We take all reports seriously and will acknowledge your message within <strong>2 working days</strong>. We
-      appreciate responsible disclosure and will work with you to address any confirmed issues.
-    </p>
-
-    <!-- Honest note -->
-    <h2>A Note on Honesty</h2>
-    <p>
-      Raceplace is a small service, and we won&rsquo;t pretend otherwise. We don&rsquo;t claim to have the security
-      resources of a large enterprise. What we do commit to is:
-    </p>
-    <ul>
-      <li>Using reputable, well-secured cloud infrastructure.</li>
-      <li>Following established security best practices appropriate to the size and nature of our service.</li>
-      <li>Being transparent when things go wrong and communicating promptly with affected users.</li>
-      <li>Continuously improving our security posture as the service grows.</li>
-    </ul>
-    <p>
-      If you have questions about our security practices, we&rsquo;re happy to discuss them. Reach out at
-      <a href="mailto:[SUPPORT_EMAIL]">[SUPPORT_EMAIL]</a>.
-    </p>
-
-    <!-- Contact -->
-    <div class="contact-box">
-      <h3>Report a Security Issue</h3>
-      <p>Found something that doesn&rsquo;t look right? Let us know.</p>
-      <p style="margin-top:1rem;">
-        <a href="mailto:[SUPPORT_EMAIL]?subject=Security%20concern" class="btn btn-secondary">[SUPPORT_EMAIL]</a>
-      </p>
-    </div>
 
   </main>
 
@@ -153,8 +97,8 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <a href="index.html" class="logo">Race<span>place</span></a>
-          <p>Part of the Boathouse platform &mdash; digital racing for canoe &amp; kayak.</p>
+          <a href="index.html" class="logo">Race<span>pace</span></a>
+          <p>An indie paddling app by Drew.</p>
         </div>
         <div class="footer-links">
           <h4>Links</h4>
@@ -172,7 +116,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        &copy; <span id="year"></span> [COMPANY_NAME]. All rights reserved.
+        &copy; <span id="year"></span> Racepace. All rights reserved.
       </div>
     </div>
   </footer>
