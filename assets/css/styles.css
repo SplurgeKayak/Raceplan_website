@@ -696,6 +696,52 @@ h4 { font-size: 1.1rem; }
 }
 
 /* ============================================================
+   Showcase grid — "Race Anywhere" image section
+   ============================================================ */
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  justify-items: center;
+}
+
+.showcase-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 0.4rem;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.showcase-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.showcase-card img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .showcase-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .showcase-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+}
+
+/* ============================================================
    Beta page — badge, status cards, timeline
    ============================================================ */
 
