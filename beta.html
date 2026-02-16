@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Security &mdash; Racepace</title>
-  <meta name="description" content="How Racepace protects your data.">
+  <title>Beta Program | Racepace</title>
+  <meta name="description" content="Racepace is in beta. Learn about the current platform status, timeline, and how to request early access.">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,8 +28,8 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="privacy-policy.html">Privacy Policy</a></li>
           <li><a href="support.html">Support</a></li>
-          <li><a href="security.html" aria-current="page">Security</a></li>
-          <li><a href="beta.html">Beta</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="beta.html" aria-current="page">Beta</a></li>
         </ul>
       </nav>
     </div>
@@ -38,58 +38,67 @@
   <!-- ======== Page Header ======== -->
   <section class="page-header">
     <div class="container">
-      <h1>Security</h1>
-      <p>How Racepace protects your data.</p>
+      <h1>Racepace is in Beta <span class="badge-beta">Beta</span></h1>
+      <p>The app is in early development. Features, data accuracy, and integrations are evolving &mdash; and feedback from testers is shaping the product.</p>
     </div>
   </section>
 
   <!-- ======== Content ======== -->
   <main class="content-body">
 
-    <p>
-      Below is a summary of how Racepace protects your data across the iOS app and our backend services.
-    </p>
+    <!-- ======== Platform Status ======== -->
+    <h2 id="platform-status">Platform Status</h2>
+    <div class="status-grid">
 
-    <!-- Security cards -->
-    <div class="security-grid">
-
-      <div class="security-card">
-        <h3>Encryption in Transit</h3>
-        <p>
-          All data transmitted between your device, Garmin Connect, and our servers is protected using
-          <strong>HTTPS/TLS</strong>.
-        </p>
+      <div class="status-card">
+        <h3>iOS TestFlight</h3>
+        <p>Available via Apple TestFlight, limited to invited testers. This is the primary way to try Racepace during the beta period.</p>
       </div>
 
-      <div class="security-card">
-        <h3>Encryption at Rest</h3>
-        <p>
-          Data stored on our backend is encrypted using the built-in encryption capabilities of
-          <strong>Microsoft Azure</strong>.
-        </p>
+      <div class="status-card">
+        <h3>Garmin Integration</h3>
+        <p>We&rsquo;re working toward Garmin Developer Program access. Currently using the Garmin Sandbox API, limited to internal testers.</p>
       </div>
 
-      <div class="security-card">
-        <h3>Azure API Management</h3>
-        <p>
-          Backend APIs are protected through <strong>Azure API Management</strong>, providing authentication,
-          rate limiting, and controlled access.
-        </p>
-      </div>
-
-      <div class="security-card">
-        <h3>iOS Platform Security</h3>
-        <p>
-          Data stored on your iPhone benefits from <strong>Apple&rsquo;s iOS platform security</strong>,
-          including hardware-backed encryption and app sandboxing.
-        </p>
+      <div class="status-card">
+        <h3>Private Preview</h3>
+        <p>Invite-only rollout to a small group of paddlers before wider access. Spots are limited while we stabilise the platform.</p>
       </div>
 
     </div>
 
-    <p style="margin-top:2rem;">
-      For security related concerns email <a href="mailto:raceplandrew@gmail.com">raceplandrew@gmail.com</a>
-    </p>
+    <!-- ======== Release Timeline ======== -->
+    <h2 id="timeline">Release Timeline</h2>
+    <p>Our roadmap is guided by tester feedback and platform readiness. Dates may shift as we learn.</p>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <span class="timeline-date">Winter 2026</span>
+        <h3>Internal Testing</h3>
+        <p>iOS TestFlight beta with a small group. Garmin sandbox development and core feature validation.</p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="timeline-date">Spring 2026</span>
+        <h3>Private Preview (10&ndash;50 Kayakers)</h3>
+        <p>Real-world testing with a wider group of paddlers. Feedback loops, stability improvements, and accuracy tuning.</p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="timeline-date">Summer 2026</span>
+        <h3>Open Access</h3>
+        <p>Open to the wider paddling community. First Racepace-supported races and public leaderboard availability.</p>
+      </div>
+
+    </div>
+
+    <!-- ======== CTA ======== -->
+    <div class="contact-box">
+      <h3>Interested in Early Access?</h3>
+      <p>We can&rsquo;t guarantee a spot, but we&rsquo;d love to hear from you.</p>
+      <a href="mailto:racepacedrew@gmail.com?subject=Beta%20Access%20Request" class="btn btn-primary" style="margin-top:1rem;">Request Beta Access</a>
+    </div>
 
   </main>
 
